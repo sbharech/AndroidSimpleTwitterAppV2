@@ -17,3 +17,8 @@ User stories covered in addition to week 3 assgigment:
 15.Advanced: User can click on a tweet to be taken to a "detail view" of that tweet
 16.Advanced: User can take favorite (and unfavorite) or reweet actions on a tweet
 17.Advanced: User can search for tweets matching a particular query and see results
+
+
+Hours needed : 10 hours
+
+![simpletwitterdemo](https://cloud.githubusercontent.com/assets/2020366/6435915/53ddbf18-c0cd-11e4-8f24-ed323e9449bd.gif)
