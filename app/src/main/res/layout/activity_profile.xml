@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.apps.restclienttemplate.ProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/rlHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:id="@+id/ivTimelinePic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00aced"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivProfilePic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUserName"
+            android:textSize="20sp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/ivProfilePic"
+            android:layout_alignLeft="@+id/ivProfilePic"
+            android:layout_alignStart="@+id/ivProfilePic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHandleName"
+            android:textSize="13sp"
+            android:layout_below="@+id/tvUserName"
+            android:layout_alignLeft="@+id/tvUserName"
+            android:layout_alignStart="@+id/tvUserName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCaption"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvHandleName"
+            android:layout_alignLeft="@+id/tvHandleName"
+            android:layout_alignStart="@+id/tvHandleName"/>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/llFFDetails"
+            android:layout_below="@+id/tvCaption">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tweets"
+                android:layout_alignParentLeft="true"
+                android:textSize="10sp"
+                android:id="@+id/btnTweets" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnTweets"
+                android:layout_toEndOf="@+id/btnTweets"
+                android:layout_alignTop="@+id/btnTweets"
+                android:textSize="10sp"
+                android:id="@+id/btnFollowingCount" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnFollowingCount"
+                android:layout_toEndOf="@+id/btnFollowingCount"
+                android:layout_alignTop="@+id/btnFollowingCount"
+                android:textSize="10sp"
+                android:id="@+id/btnFollowerCount" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorites"
+                android:layout_toRightOf="@+id/btnFollowerCount"
+                android:layout_toEndOf="@+id/btnFollowerCount"
+                android:layout_alignTop="@+id/btnFollowerCount"
+                android:textSize="10sp"
+                android:id="@+id/btnFavorites" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id = "@+id/flTimeLine"
+        android:layout_below="@+id/rlHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </FrameLayout>
+
+</RelativeLayout>
